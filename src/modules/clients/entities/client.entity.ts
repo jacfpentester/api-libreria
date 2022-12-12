@@ -1,7 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity()
-export class Products {
+export class Clients {
     @PrimaryGeneratedColumn('uuid')
     id:string;
 
@@ -9,8 +8,8 @@ export class Products {
     nombre:string;
 
     @Column('text', {nullable:false})
-    descripcion:string;
+    apellidos:string;
 
-    @Column('text', {nullable:false})
-    precio:number
+    @Column('text', {nullable:true})
+    telefono:number
 }
