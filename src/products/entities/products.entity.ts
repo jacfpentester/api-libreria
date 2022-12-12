@@ -8,8 +8,9 @@ export class Products {
     @Column('text', {unique:true})
     nombre:string;
 
-    @Column('text', {nullable:true})
+    @Column('text', {nullable:false})
     descripcion:string;
-    @Column('text', {nullable:true})
+
+    @Column('text', {nullable:false})
     precio:number
 }

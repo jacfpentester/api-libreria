@@ -1,6 +1,6 @@
 import { IsIn, IsNumber, IsPositive, IsString, MinLength } from "class-validator";
 
-export class CreateProductDto {
+export class CreateProductsDto {
     @IsString()
     @MinLength(1)
     id: string;
@@ -14,6 +14,6 @@ export class CreateProductDto {
     descripcion: string;
 
     @IsNumber()
-    @MinLength(1)
+    @MinLength(2)
     precio: number;
 }
